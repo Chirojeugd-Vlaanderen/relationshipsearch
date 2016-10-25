@@ -133,6 +133,13 @@ function relationshipsearch_civicrm_alterSettingsFolders(&$metaDataFolders = NUL
   _relationshipsearch_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
 
+function relationshipsearch_civicrm_alterAPIPermissions($entity, $action, &$params, &$permissions) {
+  $permissions['active_relationship']['get'] = array(
+    'access CiviCRM',
+    'view all contacts',
+  );
+}
+
 /**
  * Functions below this ship commented out. Uncomment as required.
  *
