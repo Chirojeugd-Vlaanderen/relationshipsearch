@@ -1,7 +1,7 @@
 <?php
 /*
   be.chiro.civi.relationshipsearch - contribution batch tools.
-  Copyright (C) 2016  Chirojeugd-Vlaanderen vzw
+  Copyright (C) 2016, 2017  Chirojeugd-Vlaanderen vzw
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as
@@ -64,7 +64,7 @@ function civicrm_api3_active_relationship_Get($params) {
   $result = CRM_Queryapitools_Tools::BasicGet(
     $sql,
     $params,
-    'CRM_Contact_BAO_Relationship',
+    'Relationship',
     $extraFields);
 
   return $result;
